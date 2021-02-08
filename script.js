@@ -86,7 +86,7 @@ var numericChar = [
   '9',
 ];
 function getSelection() {
-  var length = parseInt (
+  var length = parseInt(
     prompt('How many total characters would you prefer for your password?')
   );
   if (Number.isNaN(length) === true) {
@@ -102,32 +102,31 @@ function getSelection() {
     return;
   }
 } 
-var hasSpecialChar = confirm(
-  'Please type in a uniwue character'
-)
-
-for (var i= 0; i > )
 function getSelection() {
   var length = parseInt(
     prompt('Please type in a character')
     );
     if (isNaN(length) === true) {
-      alert('Please enter a unique special character for your password.');
+      alert('Please enter a unique special character of the following: ! @ # $ % ^ & / _ > ? < { or } for your password.');
     return;
-    }
+   }
 }
 
-var hasUpperCase =
 
-var hasLowerCase =
+// for (var i= 0; i > )
+// var hasUpperCase =
 
-var hasNumericChar = 
+// var hasLowerCase =
 
-if (options.hasSpecialChar)
+// var hasNumericChar = 
 
+// if (options.hasSpecialChar)
 
+// var hasSpecialChar = confirm(
+//   'Please type in a unique character'
+// )
 
-var potentialChar = [""];
+// var potentialChar = [""];
 
 
 // var hasSpecialChar = confirm(
