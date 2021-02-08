@@ -85,7 +85,24 @@ var numericChar = [
   '8',
   '9',
 ];
+function getSelection() {
+  var length = parseInt(
+    prompt('How many total characters would you prefer for your password?')
+  );
+  if (Number.isNaN(length)=== true) {
+    alert('Please enter a numeric length for your password.');
+    return;
+  }
+  if (length < 8) {
+    alert('Password length must be at least eight characters.');
+    return;
+  }
+  if (length > 128) {
+    alert('Password must not me more than 128 characters');
+    return;
+  }
 
+}
 
 
 // var hasSpecialChar = confirm(
