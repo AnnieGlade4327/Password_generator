@@ -1,23 +1,11 @@
 
-// console.log(test)
 
-var testaroo = ['uno', 'dos', 'tres'];
-var length = parseInt (
-  prompt('How many languages do you speak?')
-);
-for (var i = 0; i < testaroo.length; i ++) {
-  console.log(testaroo[i]);
-}
-if (isNaN(length)===true) {
-  alert("Not even one?!");
-}
-
-{/* var specialChar = [];
+{var specialChar = [];
 var numericChar =[];
 var lowerCase= [];
-var upperCase= []; */}
+var upperCase= []; }
 
-{/* function getOptions() {
+{ function getOptions() {
   var length= 
 }
 
@@ -25,4 +13,17 @@ var upperCase= []; */}
 if (Number.isNaN(length)=== true) {
     alert("password length needs a number");
     return;
-} */}
+}
+}
+
+// console.log(test)
+// var testaroo = ['uno', 'dos', 'tres'];
+// var length = parseInt (
+//   prompt('How many languages do you speak?')
+// );
+// for (var i = 0; i < testaroo.length; i ++) {
+//   console.log(testaroo[i]);
+// }
+// if (isNaN(length)===true) {
+//   alert("Not even one?!");
+// }
