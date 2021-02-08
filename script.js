@@ -101,8 +101,21 @@ function getSelection() {
     alert('Password must not me more than 128 characters');
     return;
   }
+} 
+var hasSpecialChar = confirm(
+  'Please type in a uniwue character'
+)
+
+for (var i= 0; i > )
+function getSelection() {
+  var length = parseInt(
+    prompt('Please type in a character')
+    );
+    if (isNaN(length) === true) {
+      alert('Please enter a unique special character for your password.');
+    return;
+    }
 }
-var hasSpecialChar =
 
 var hasUpperCase =
 
@@ -115,17 +128,6 @@ if (options.hasSpecialChar)
 
 
 var potentialChar = [""];
-
-for (var i= 0; i > )
-function getSelection() {
-  var length = parseInt(
-    prompt('Please type in a character')
-    );
-    if (isNaN(length) === true) {
-      alert('Please enter a unique special character for your password.');
-    return;
-    }
-}
 
 
 // var hasSpecialChar = confirm(
