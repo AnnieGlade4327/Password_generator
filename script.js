@@ -86,7 +86,7 @@ var numericChar = [
   '9',
 ];
 function getSelection() {
-  var length = parseInt(
+  var length = parseInt (
     prompt('How many total characters would you prefer for your password?')
   );
   if (Number.isNaN(length) === true) {
@@ -102,6 +102,21 @@ function getSelection() {
     return;
   }
 }
+var hasSpecialChar =
+
+var hasUpperCase =
+
+var hasLowerCase =
+
+var hasNumericChar = 
+
+if (options.hasSpecialChar)
+
+
+
+var potentialChar = [""];
+
+for (var i= 0; i > )
 function getSelection() {
   var length = parseInt(
     prompt('Please type in a character')
