@@ -23,4 +23,5 @@
 // if (isNaN(length)===true) {
 //   alert("Not even one?!");
 // }
-// rememebr to ask about diff with isNan and Number.isNan, they both seemed to work the same
+// remember to ask about diff with isNan and Number.isNan, they both seemed to work the same
+// Also, get into true vs false more, if, and the return; action or function junction whatever it is
