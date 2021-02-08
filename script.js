@@ -1,21 +1,17 @@
 
 
-{var specialChar = [];
-var numericChar =[];
-var lowerCase= [];
-var upperCase= []; }
+// var specialChar = [];
+// var numericChar =[];
+// var lowerCase= [];
+// var upperCase= []; 
 
-{ function getOptions() {
-  var length= 
-}
-
-
-if (Number.isNaN(length)=== true) {
-    alert("password length needs a number");
-    return;
-}
-}
-
+// function getOptions() {
+//   var length= 
+// if (Number.isNaN(length)=== true) {
+//     alert("password length needs a number");
+//     return;
+// }
+//
 // console.log(test)
 // var testaroo = ['uno', 'dos', 'tres'];
 // var length = parseInt (
