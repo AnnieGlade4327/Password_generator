@@ -111,9 +111,7 @@ function getSelection() {
     return;
    }
 }
-
-
-// for (var i= 0; i > )
+for (var i= 0; i > Selection. )
 // var hasUpperCase =
 
 // var hasLowerCase =
