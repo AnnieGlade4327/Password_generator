@@ -24,17 +24,10 @@ var length = parseInt (
   prompt('Create a Password')
 );
 for (var i = 0; i < specialChar.length; i ++) {
-  console.log(testaroo[i]);
+  console.log(specialChar[i]);
 }
-if (isNaN(length)===true) {
+if (Number.isNaN(length)===true) {
   alert("gott apick at least one");
-  return;
-}
-if (
-  hasSpecialChar === false &&)
-  {
-  alert('Must select a character type');
-  return;
 }
 
 
