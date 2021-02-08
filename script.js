@@ -1,5 +1,5 @@
 
-console.log(t-t-t-t-test)
+// console.log(test)
 
 var testaroo = ['uno', 'dos', 'tres'];
 var length = parseInt (
@@ -10,7 +10,6 @@ for (var i = 0; i < testaroo.length; i ++) {
 }
 if (Number.isNaN(length)===true) {
   alert("Not even one?!");
-  return;
 }
 
 {/* var specialChar = [];
