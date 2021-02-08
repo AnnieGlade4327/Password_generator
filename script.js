@@ -1,6 +1,44 @@
 
 
-// var specialChar = [];
+var specialChar = [
+  '!', 
+  '@',
+  '#',
+  '$',
+  '%',
+  '^',
+  '&',
+  '/',
+  '_',
+  '>',
+  '?',
+  '<',
+  '}',
+  '{',
+  '.',
+];
+var specialChar = confirm(
+  'Click pick to confirm including special characters.'
+);
+if (
+  specialChar === false &&
+) {
+  alert('Must select a character type');
+  return;
+}
+var length = parseInt (
+  prompt('Create a Password')
+);
+for (var i = 0; i < specialChar.length; i ++) {
+  console.log(testaroo[i]);
+}
+if (isNaN(length)===true) {
+  alert("gott apick at least one");
+}
+
+
+
+
 // var numericChar =[];
 // var lowerCase= [];
 // var upperCase= []; 
