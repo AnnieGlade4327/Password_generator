@@ -23,3 +23,4 @@
 // if (isNaN(length)===true) {
 //   alert("Not even one?!");
 // }
+// rememebr to ask about diff with isNan and Number.isNan, they both seemed to work the same
