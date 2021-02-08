@@ -102,15 +102,30 @@ function getSelection() {
     return;
   }
 } 
-function getSelection() {
-  var length = parseInt(
-    prompt('Please type in a character')
-    );
-    if (isNaN(length) === true) {
-      alert('Please enter a unique special character of the following: ! @ # $ % ^ & / _ > ? < { or } for your password.');
-    return;
-   }
+// var hasSpecialChar = confirm(
+//   'Click pick to confirm including special characters.'
+// );
+var length = parseInt (
+  prompt('Create a Password')
+);
+for (var i = 0; i < specialChar.length; i ++) {
+  console.log(specialChar[i]);
 }
+if (Number.isNaN(length)===true) {
+  alert("gott apick at least one");
+}
+if (isNaN(length) === true) {
+  alert('Please enter a unique special character of the following: ! @ # $ % ^ & / _ > ? < { or } for your password.');
+}
+// function getSelection() {
+//   var length = parseInt(
+//     prompt('Please type in a character')
+//     );
+//     if (isNaN(length) === true) {
+//       alert('Please enter a unique special character of the following: ! @ # $ % ^ & / _ > ? < { or } for your password.');
+//     return;
+//    }
+// }
 // for (var i= 0; i > Selection
 // var hasUpperCase =
 
