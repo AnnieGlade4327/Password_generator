@@ -8,7 +8,7 @@ var length = parseInt (
 for (var i = 0; i < testaroo.length; i ++) {
   console.log(testaroo[i]);
 }
-if (Number.isNaN(length)===true) {
+if (isNaN(length)===true) {
   alert("Not even one?!");
 }
 
