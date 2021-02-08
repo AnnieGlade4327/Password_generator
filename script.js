@@ -89,7 +89,7 @@ function getSelection() {
   var length = parseInt(
     prompt('How many total characters would you prefer for your password?')
   );
-  if (Number.isNaN(length)=== true) {
+  if (Number.isNaN(length) === true) {
     alert('Please enter a numeric length for your password.');
     return;
   }
@@ -101,7 +101,15 @@ function getSelection() {
     alert('Password must not me more than 128 characters');
     return;
   }
-
+}
+function getSelection() {
+  var length = parseInt(
+    prompt('Please type in a character')
+    );
+    if (isNaN(length) === true) {
+      alert('Please enter a unique special character for your password.');
+    return;
+    }
 }
 
 
