@@ -1,50 +1,29 @@
 
-var specialChar = [];
+console.log(t-t-t-t-test)
+
+var testaroo = ['uno', 'dos', 'tres'];
+var length = parseInt (
+  prompt('How many languages do you speak?')
+);
+for (var i = 0; i < testaroo.length; i ++) {
+  console.log(testaroo[i]);
+}
+if (Number.isNaN(length)===true) {
+  alert("Not even one?!");
+  return;
+}
+
+{/* var specialChar = [];
 var numericChar =[];
 var lowerCase= [];
-var upperCase= [];
+var upperCase= []; */}
 
-function getOptions() {
+{/* function getOptions() {
   var length= 
 }
 
 
-if (isNaN(length)=== true) {
+if (Number.isNaN(length)=== true) {
     alert("password length needs a number");
     return;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Assignment Code
-// var generateBtn = document.querySelector("#generate");
-
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+} */}
