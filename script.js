@@ -17,21 +17,21 @@ var specialChar = [
   '{',
   '.',
 ];
-var hasSpecialChar = confirm(
-  'Click pick to confirm including special characters.'
-);
-var length = parseInt (
-  prompt('Create a Password')
-);
-for (var i = 0; i < specialChar.length; i ++) {
-  console.log(specialChar[i]);
-}
-if (Number.isNaN(length)===true) {
-  alert("gott apick at least one");
-}
 
 
 
+// var hasSpecialChar = confirm(
+//   'Click pick to confirm including special characters.'
+// );
+// var length = parseInt (
+//   prompt('Create a Password')
+// );
+// for (var i = 0; i < specialChar.length; i ++) {
+//   console.log(specialChar[i]);
+// }
+// if (Number.isNaN(length)===true) {
+//   alert("gott apick at least one");
+// }
 // var numericChar =[];
 // var lowerCase= [];
 // var upperCase= []; 
