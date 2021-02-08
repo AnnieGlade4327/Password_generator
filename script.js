@@ -91,23 +91,23 @@ function getSelection() {
   );
   if (Number.isNaN(length) === true) {
     alert('Please enter a numeric length for your password.');
-    return;
+   
   }
   if (length < 8) {
     alert('Password length must be at least eight characters.');
-    return;
+  
   }
   if (length > 128) {
     alert('Password must not me more than 128 characters');
-    return;
+  
   }
 } 
-// var hasSpecialChar = confirm(
-//   'Click pick to confirm including special characters.'
-// );
-var length = parseInt (
-  prompt('Create a Password')
+var hasSpecialChar = confirm(
+  'Click pick to confirm including special characters.'
 );
+// var length = parseInt (
+//   prompt('Create a Password')
+// );
 for (var i = 0; i < specialChar.length; i ++) {
   console.log(specialChar[i]);
 }
