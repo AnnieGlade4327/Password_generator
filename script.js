@@ -126,8 +126,10 @@ function getRandom(arr) {
   return randomE;
 }
 function createPassword() {
+
   var options = getSelection();
   var result = [];
+  
 }
 
 //creating arrays for possible characters
@@ -162,7 +164,16 @@ for (var i = 0; i < options.length; i++) {
 for (var i = 0; i < setChar.length; i++) {
   result[i] = setChar[i];
 }
-return result.join("");
+// return result.join("");
+
+var createBtn = document.querySelector('#generate');
+function writePassword() {
+  var password = createPassword();
+  var passwordText = document.querySelector('#password');
+
+  passwordText.value = password;
+}
+generateBtn.addEventListener('click', writePassword);
 
 
 //{
