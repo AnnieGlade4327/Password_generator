@@ -125,12 +125,9 @@ function getRandom(arr) {
 
   return randomE;
 }
-function createPassword() {
-
+function generatePassword() {
   var options = getSelection();
   var result = [];
-  
-}
 
 //creating arrays for possible characters
 var possibleChar = [];
@@ -159,22 +156,22 @@ for (var i = 0; i < options.length; i++) {
   var possibleChar = getRandom(possibleChar);
 
   result.push(possibleChar);
-
 }
 for (var i = 0; i < setChar.length; i++) {
   result[i] = setChar[i];
 }
-// return result.join("");
+return result.join("");
+}
 
-var createBtn = document.querySelector('#generate');
+var generateBtn = document.querySelector("#generate");
+
 function writePassword() {
-  var password = createPassword();
-  var passwordText = document.querySelector('#password');
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 }
-generateBtn.addEventListener('click', writePassword);
-
+generateBtn.addEventListener("click", writePassword);
 
 //{
 //   alert("your password is being concocted...");
