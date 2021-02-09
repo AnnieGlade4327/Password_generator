@@ -77,7 +77,7 @@ function getSelection() {
   var length = parseInt(
     prompt("How many total characters would you prefer for your password?")
   );
-  if (Number.isNaN(length) === true) {
+  if (isNaN(length) === true) {
     alert("Please enter a numeric length for your password.");
     return;
   }
@@ -101,7 +101,6 @@ var hasLowerCase = confirm(
 var hasNumericChar = confirm(
   "Please click Yes to confirm including numeric characters."
 );
-}
 if (
   hasSpecialChar === false &&
   hasUpperCase === false &&
@@ -118,11 +117,15 @@ var passwords = {
   hasLowerCase: hasLowerCase,
   hasNumericChar: hasNumericChar,
 };
-return passwords;
+  return passwords;
 }
 
 
 
+
+  //{
+//   alert("your password is being concocted...");
+// }
 
 // var hasNumericChar = confirm("");
 // var hasSpecialChar = confirm(
