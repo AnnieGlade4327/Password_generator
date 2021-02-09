@@ -72,38 +72,52 @@ var lowerCase = [
   "z",
 ];
 var numericChar = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
 function getSelection() {
   var length = parseInt(
     prompt("How many total characters would you prefer for your password?")
   );
   if (Number.isNaN(length) === true) {
     alert("Please enter a numeric length for your password.");
+    return;
   }
   if (length < 8) {
     alert("Password length must be at least eight characters.");
+    return;
   }
   if (length > 128) {
-    alert("Password must not me more than 128 characters");
+    alert("Password must not be more than 128 characters");
+    return;
   }
-}
-var hasNumericChar = confirm(
-  ""
-)
-var hasSpecialChar = confirm(
-  "Click pick to confirm including special characters."
-);
-
-for (var i = 0; i < specialChar.length; i++) {
-  console.log(specialChar[i]);
-}
-if (Number.isNaN(length) === true) {
-  alert("gott apick at least one");
-}
-if (isNaN(length) === true) {
-  alert(
-    "Please enter a unique special character of the following: ! @ # $ % ^ & / _ > ? < { or } for your password."
+  var hasSpecialChar = confirm(
+    "Please click Yes to confirm including special characters."
   );
+  var hasUpperCase = confirm(
+    "Please click Yes to confirm including an Upper Cased character."
+  );
+var hasLowerCase = confirm(
+  "Please click Yes to confirm including a lower cased character."
+);
+var hasNumericChar = confirm(
+  "Please click Yes to confirm including numeric characters."
+);
 }
+
+// var hasNumericChar = confirm("");
+// var hasSpecialChar = confirm(
+//   "Click pick to confirm including special characters."
+// );
+// for (var i = 0; i < specialChar.length; i++) {
+//   console.log(specialChar[i]);
+// }
+// if (Number.isNaN(length) === true) {
+//   alert("gott apick at least one");
+// }
+// if (isNaN(length) === true) {
+//   alert(
+//     "Please enter a unique special character of the following: ! @ # $ % ^ & / _ > ? < { or } for your password."
+//   );
+// }
 
 // var length = parseInt (***********<<<<<<<<<<<<
 //   prompt('Create a Password')
