@@ -125,7 +125,11 @@ function getRandom(arr) {
 
   return randomE;
 }
-
+function createPassword() {
+  var options = get selection();
+  var result = [];
+  
+}
 //{
 //   alert("your password is being concocted...");
 // }
