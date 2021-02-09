@@ -1,120 +1,113 @@
-
-
 var specialChar = [
-  '!', 
-  '@',
-  '#',
-  '$',
-  '%',
-  '^',
-  '&',
-  '/',
-  '_',
-  '>',
-  '?',
-  '<',
-  '}',
-  '{',
-  '.',
+  "!",
+  "@",
+  "#",
+  "$",
+  "%",
+  "^",
+  "&",
+  "/",
+  "_",
+  ">",
+  "?",
+  "<",
+  "}",
+  "{",
+  ".",
 ];
 var upperCase = [
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-  'G',
-  'H',
-  'I',
-  'J',
-  'K',
-  'L',
-  'M',
-  'N',
-  'O',
-  'P',
-  'Q',
-  'R',
-  'S',
-  'T',
-  'U',
-  'V',
-  'W',
-  'X',
-  'Y',
-  'Z',
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
 ];
 var lowerCase = [
-  'a',
-  'b',
-  'c',
-  'd',
-  'e',
-  'f',
-  'g',
-  'h',
-  'i',
-  'j',
-  'k',
-  'l',
-  'm',
-  'n',
-  'o',
-  'p',
-  'q',
-  'r',
-  's',
-  't',
-  'u',
-  'v',
-  'w',
-  'x',
-  'y',
-  'z',
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
 ];
-var numericChar = [
-  '0',
-  '1',
-  '2',
-  '3',
-  '4',
-  '5',
-  '6',
-  '7',
-  '8',
-  '9',
-];
+var numericChar = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 function getSelection() {
   var length = parseInt(
-    prompt('How many total characters would you prefer for your password?')
+    prompt("How many total characters would you prefer for your password?")
   );
   if (Number.isNaN(length) === true) {
-    alert('Please enter a numeric length for your password.');
-   
+    alert("Please enter a numeric length for your password.");
   }
   if (length < 8) {
-    alert('Password length must be at least eight characters.');
-  
+    alert("Password length must be at least eight characters.");
   }
   if (length > 128) {
-    alert('Password must not me more than 128 characters');
-  
+    alert("Password must not me more than 128 characters");
   }
-} 
+}
+var hasNumericChar = confirm(
+  ""
+)
 var hasSpecialChar = confirm(
-  'Click pick to confirm including special characters.'
+  "Click pick to confirm including special characters."
 );
 
-for (var i = 0; i < specialChar.length; i ++) {
+for (var i = 0; i < specialChar.length; i++) {
   console.log(specialChar[i]);
 }
-if (Number.isNaN(length)===true) {
+if (Number.isNaN(length) === true) {
   alert("gott apick at least one");
 }
 if (isNaN(length) === true) {
-  alert('Please enter a unique special character of the following: ! @ # $ % ^ & / _ > ? < { or } for your password.');
+  alert(
+    "Please enter a unique special character of the following: ! @ # $ % ^ & / _ > ? < { or } for your password."
+  );
 }
+
+// var length = parseInt (***********<<<<<<<<<<<<
+//   prompt('Create a Password')
+// );
 
 // function getSelection() {
 //   var length = parseInt(
@@ -130,7 +123,7 @@ if (isNaN(length) === true) {
 
 // var hasLowerCase =
 
-// var hasNumericChar = 
+// var hasNumericChar =
 
 // if (options.hasSpecialChar)
 
@@ -139,7 +132,6 @@ if (isNaN(length) === true) {
 // )
 
 // var potentialChar = [""];
-
 
 // var hasSpecialChar = confirm(
 //   'Click pick to confirm including special characters.'
@@ -155,10 +147,10 @@ if (isNaN(length) === true) {
 // }
 // var numericChar =[];
 // var lowerCase= [];
-// var upperCase= []; 
+// var upperCase= [];
 
 // function getOptions() {
-//   var length= 
+//   var length=
 // if (Number.isNaN(length)=== true) {
 //     alert("password length needs a number");
 //     return;
