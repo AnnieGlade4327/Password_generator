@@ -128,7 +128,6 @@ function getRandom(arr) {
 function createPassword() {
   var options = getSelection();
   var result = [];
-
 }
 
 //creating arrays for possible characters
@@ -156,6 +155,11 @@ if (options.hasNumericChar) {
 
 for (var i = 0; i < options.length; i++) {
   var possibleChar = getRandom(possibleChar);
+
+  result.push(possibleChar);
+
+}
+for (var i = 0; i < setChar.length; i++) {
   result[i] = setChar[i];
 }
 return result.join("");
