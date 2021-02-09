@@ -119,6 +119,12 @@ function getSelection() {
   };
   return passwords;
 }
+function getRandom(arr) {
+  var randomI = Math.floor(Math.random() * arr.length);
+  var randomE = arr[randomI];
+
+  return randomE;
+}
 
 //{
 //   alert("your password is being concocted...");
