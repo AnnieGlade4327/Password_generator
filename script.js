@@ -130,6 +130,37 @@ function createPassword() {
   var result = [];
 
 }
+
+//creating arrays for possible characters
+var possibleChar = [];
+
+var setChar = [];
+
+if (options.hasSpecialChar) {
+  possibleChar = possibleChar.concat(specialChar);
+  setChar.push(getRandom(specialChar));
+}
+if (options.hasUpperCase) {
+  possibleChar = possibleChar.concat(upperCase);
+  setChar.push(getRandom(upperCase));
+}
+if (options.hasLowerCase) {
+  possibleChar = possibleChar.concat(lowerCase);
+  setChar.push(getRandom(lowerCase));
+}
+if (options.hasNumericChar) {
+  possibleChar = possibleChar.concat(numericChar);
+  setChar.push(getRandom(numericChar));
+}
+// for loop to iterate password length
+
+for (var i = 0; i < options.length; i++) {
+  var possibleChar = getRandom(possibleChar);
+  result[i] = setChar[i];
+}
+return result.join("");
+
+
 //{
 //   alert("your password is being concocted...");
 // }
