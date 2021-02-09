@@ -95,35 +95,32 @@ function getSelection() {
   var hasUpperCase = confirm(
     "Please click Yes to confirm including an Upper Cased character."
   );
-var hasLowerCase = confirm(
-  "Please click Yes to confirm including a lower cased character."
-);
-var hasNumericChar = confirm(
-  "Please click Yes to confirm including numeric characters."
-);
-if (
-  hasSpecialChar === false &&
-  hasUpperCase === false &&
-  hasLowerCase === false &&
-  hasNumericChar === false
-){
-  alert("Must choose at least one.");
-  return;
-}
-var passwords = {
-  length: length,
-  hasSpecialChar: hasSpecialChar,
-  hasUpperCase: hasUpperCase,
-  hasLowerCase: hasLowerCase,
-  hasNumericChar: hasNumericChar,
-};
+  var hasLowerCase = confirm(
+    "Please click Yes to confirm including a lower cased character."
+  );
+  var hasNumericChar = confirm(
+    "Please click Yes to confirm including numeric characters."
+  );
+  if (
+    hasSpecialChar === false &&
+    hasUpperCase === false &&
+    hasLowerCase === false &&
+    hasNumericChar === false
+  ) {
+    alert("Must choose at least one.");
+    return;
+  }
+  var passwords = {
+    length: length,
+    hasSpecialChar: hasSpecialChar,
+    hasUpperCase: hasUpperCase,
+    hasLowerCase: hasLowerCase,
+    hasNumericChar: hasNumericChar,
+  };
   return passwords;
 }
 
-
-
-
-  //{
+//{
 //   alert("your password is being concocted...");
 // }
 
