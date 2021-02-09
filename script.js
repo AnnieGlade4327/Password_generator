@@ -102,6 +102,27 @@ var hasNumericChar = confirm(
   "Please click Yes to confirm including numeric characters."
 );
 }
+if (
+  hasSpecialChar === false &&
+  hasUpperCase === false &&
+  hasLowerCase === false &&
+  hasNumericChar === false
+){
+  alert("Must choose at least one.");
+  return;
+}
+var passwords = {
+  length: length,
+  hasSpecialChar: hasSpecialChar,
+  hasUpperCase: hasUpperCase,
+  hasLowerCase: hasLowerCase,
+  hasNumericChar: hasNumericChar,
+};
+return passwords;
+}
+
+
+
 
 // var hasNumericChar = confirm("");
 // var hasSpecialChar = confirm(
