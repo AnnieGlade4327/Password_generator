@@ -14,6 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
+<<<<<<< HEAD
   background-color: #f9fbfd;
 }
 
@@ -21,6 +22,15 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+=======
+  background-color: #808080;
+}
+
+.wrapper {
+  padding-top: 20px;
+  padding-left: 17px;
+  padding-right: 23px;
+>>>>>>> d277da7f7153d664169cda4bc8c3576c4923d7c0
 }
 
 header {
