@@ -1,3 +1,4 @@
+//make the initial variables
 let specialChar = [
     "!",
     "@",
@@ -72,11 +73,11 @@ let specialChar = [
     "z",
   ];
   let numericChar = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  
+  //creating a function and circumstances to set characters
   function getSelection() {
     let length = parseInt(
       prompt("How many total characters would you prefer for your password?")
-    );
+    ); //circumstance to set length
     if (isNaN(length) === true) {
       alert("Please enter a numeric length for your password.");
       return;
@@ -89,6 +90,7 @@ let specialChar = [
       alert("Password must not be more than 128 characters");
       return;
     }
+    //(variable function?) targetting all elements, or are these objects, anywho, return that data.
     let hasSpecialChar = confirm(
       "Please click Yes to confirm including special characters."
     );
@@ -109,22 +111,22 @@ let specialChar = [
     ) {
       alert("Must choose at least one.");
       return;
-    }
+    } //ask about : vs =.  set password variable to equal input of each of these elements
     let passwords = {
       length: length,
       hasSpecialChar: hasSpecialChar,
       hasUpperCase: hasUpperCase,
       hasLowerCase: hasLowerCase,
       hasNumericChar: hasNumericChar,
-    };
+    }; //why does the return go outside of the function i get lost here took me forever to figure out
     return passwords;
-  }
+  } //creating an array to set a random, generated psw
   function getRandom(arr) {
     let randomI = Math.floor(Math.random() * arr.length);
     let randomE = arr[randomI];
-  
+  //and why did this only work when i placed it inside the function?
     return randomE;
-  }
+  } // function to retrieve input and trigger random character selection 
   function generatePassword() {
     let options = getSelection();
     let result = [];
@@ -133,7 +135,7 @@ let specialChar = [
   var possibleChar = [];
   
   var setChar = [];
-  
+  //conditions to set psw
   if (options.hasSpecialChar) {
     possibleChar = possibleChar.concat(specialChar);
     setChar.push(getRandom(specialChar));
@@ -161,7 +163,7 @@ let specialChar = [
     result[i] = setChar[i];
   }
   return result.join("");
-  }
+  } //why is it returning a billion letters at end, i mess up for loop somehow, it's not random enough
   
   var generateBtn = document.querySelector("#generate");
   
@@ -172,10 +174,12 @@ let specialChar = [
     passwordText.value = password;
   }
   generateBtn.addEventListener("click", writePassword);
-  
-  //{
-  //   alert("your password is being concocted...");
-  // }
+ 
+
+
+//  alert("your password is being concocted...");
+  // if (2+2 == 4) 
+  // console.log("your password is being concocted...");
   
   // var hasNumericChar = confirm("");
   // var hasSpecialChar = confirm(
@@ -193,7 +197,7 @@ let specialChar = [
   //   );
   // }
   
-  // var length = parseInt (***********<<<<<<<<<<<<
+  //var length = parseInt ******** REMEMBER THIS *********
   //   prompt('Create a Password')
   // );
   
@@ -464,55 +468,4 @@ let specialChar = [
 // //     return;
 // //    }
 // // }
-// // for (var i= 0; i > Selection
-// // var hasUpperCase =
-
-// // var hasLowerCase =
-
-// // var hasNumericChar =
-
-// // if (options.hasSpecialChar)
-
-// // var hasSpecialChar = confirm(
-// //   'Please type in a unique character'
-// // )
-
-// // var potentialChar = [""];
-
-// // var hasSpecialChar = confirm(
-// //   'Click pick to confirm including special characters.'
-// // );
-// // var length = parseInt (
-// //   prompt('Create a Password')
-// // );
-// // for (var i = 0; i < specialChar.length; i ++) {
-// //   console.log(specialChar[i]);
-// // }
-// // if (Number.isNaN(length)===true) {
-// //   alert("gott apick at least one");
-// // }
-// // var numericChar =[];
-// // var lowerCase= [];
-// // var upperCase= [];
-
-// // function getOptions() {
-// //   var length=
-// // if (Number.isNaN(length)=== true) {
-// //     alert("password length needs a number");
-// //     return;
-// // }
-// //
-// // console.log(test)
-// // var testaroo = ['uno', 'dos', 'tres'];
-// // var length = parseInt (
-// //   prompt('How many languages do you speak?')
-// // );
-// // for (var i = 0; i < testaroo.length; i ++) {
-// //   console.log(testaroo[i]);
-// // }
-// // if (isNaN(length)===true) {
-// //   alert("Not even one?!");
-// // }
-// // remember to ask about diff with isNan and Number.isNan, they both seemed to work the same
-// // Also, get into true vs false more, if, and the return; action or function junction whatever it is
-// >>>>>>> d277da7f7153d664169cda4bc8c3576c4923d7c0
+// // for (var i= 0; i > Selection)
