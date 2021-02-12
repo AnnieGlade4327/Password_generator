@@ -1,4 +1,4 @@
-var specialChar = [
+let specialChar = [
     "!",
     "@",
     "#",
@@ -15,7 +15,7 @@ var specialChar = [
     "{",
     ".",
   ];
-  var upperCase = [
+  let upperCase = [
     "A",
     "B",
     "C",
@@ -43,7 +43,7 @@ var specialChar = [
     "Y",
     "Z",
   ];
-  var lowerCase = [
+  let lowerCase = [
     "a",
     "b",
     "c",
@@ -71,10 +71,10 @@ var specialChar = [
     "y",
     "z",
   ];
-  var numericChar = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  let numericChar = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   
   function getSelection() {
-    var length = parseInt(
+    let length = parseInt(
       prompt("How many total characters would you prefer for your password?")
     );
     if (isNaN(length) === true) {
@@ -89,16 +89,16 @@ var specialChar = [
       alert("Password must not be more than 128 characters");
       return;
     }
-    var hasSpecialChar = confirm(
+    let hasSpecialChar = confirm(
       "Please click Yes to confirm including special characters."
     );
-    var hasUpperCase = confirm(
+    let hasUpperCase = confirm(
       "Please click Yes to confirm including an Upper Cased character."
     );
-    var hasLowerCase = confirm(
+    let hasLowerCase = confirm(
       "Please click Yes to confirm including a lower cased character."
     );
-    var hasNumericChar = confirm(
+    let hasNumericChar = confirm(
       "Please click Yes to confirm including numeric characters."
     );
     if (
@@ -110,7 +110,7 @@ var specialChar = [
       alert("Must choose at least one.");
       return;
     }
-    var passwords = {
+    let passwords = {
       length: length,
       hasSpecialChar: hasSpecialChar,
       hasUpperCase: hasUpperCase,
@@ -120,14 +120,14 @@ var specialChar = [
     return passwords;
   }
   function getRandom(arr) {
-    var randomI = Math.floor(Math.random() * arr.length);
-    var randomE = arr[randomI];
+    let randomI = Math.floor(Math.random() * arr.length);
+    let randomE = arr[randomI];
   
     return randomE;
   }
   function generatePassword() {
-    var options = getSelection();
-    var result = [];
+    let options = getSelection();
+    let result = [];
   
   //creating arrays for possible characters
   var possibleChar = [];
@@ -166,8 +166,8 @@ var specialChar = [
   var generateBtn = document.querySelector("#generate");
   
   function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
+    let password = generatePassword();
+    let passwordText = document.querySelector("#password");
   
     passwordText.value = password;
   }
