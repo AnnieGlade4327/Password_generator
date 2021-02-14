@@ -154,7 +154,7 @@ function generatePassword() {
   }
   // for loop to iterate password length
 
-  for (var i = 0; i < options.length; i / 3) {
+  for (var i = 0; i < options.length; i ++) {
     var possibleChar = getRandom(possibleChar);
 
     result.push(possibleChar);
@@ -162,7 +162,7 @@ function generatePassword() {
   for (var i = 0; i < setChar.length; i ++ ) {
     result[i] = setChar[i];
   }
-  return result.join(length * 1);
+  return result.join(result);
 } //why is it returning a billion letters at end, i mess up for loop somehow, it's not random enough
 
 var generateBtn = document.querySelector("#generate");
