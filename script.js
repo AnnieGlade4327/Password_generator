@@ -162,7 +162,7 @@ function generatePassword() {
   for (var i = 0; i < setChar.length; i++) {
     result[i] = setChar[i];
   }
-  return result.join(getRandom[i]);
+  return result.join([i]);
 } 
 
 var generateBtn = document.querySelector("#generate");
