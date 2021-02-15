@@ -1,6 +1,6 @@
 # Password Generator
 
-- [Password Generator](#Password_Generator)
+- [Password Generator](#Password Generator)
 - [Demo-Preview](##Preview)
   ![photo of application](password_gen.png)
 
@@ -15,11 +15,11 @@
         - [ ] You Must Select a Special Character
         - [ ] You Must Selected an Upper Cased Letter
         - [ ] You Must Selected a Lower Cased Letter
-
-    ```javascript
-
+# Password Generator
+ 
+   ```javascript
 function getRandom(arr) {
-let randomI = Math.floor(Math.random() \* arr.length); //ask about arr.length more
+let randomI = Math.floor(Math.random() \* arr.length);
 let randomE = arr[randomI];
 return randomE;
 } // function to retrieve input and trigger random character selection
