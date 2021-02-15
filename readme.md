@@ -1,8 +1,24 @@
-|          |           |
-*
-*
-*
-*
+```mermaid          
+graph TD;
+  
+  SubGraph1 --> SubGraph1Flow
+  subgraph "You Must select >=8 and <=128"
+  SubGraph1Flow(SubNode 1)
+ 
+  
+
+  end
+
+  subgraph "Generate A New Password"
+  Node1[Node 1] --> Node2[Node 2]
+  Node2 --> SubGraph1[Jump to SubGraph1]
+  SubGraph1 --> FinalThing[Final Thing]
+end
+```
+*SubGraph1Flow -- YesforSpecialChar --> ClickOkay
+  SubGraph1Flow -- YesforUpperCase --> ClickOkay
+  SubGraph1Flow -- YesForLowerCase --> ClickOkay
+* SubGraph1Flow -- HowManyChar --> EnterNumericChar
 
 <!-- ## GIVEN I need a new, secure password
 ## WHEN I click the button to generate a password
