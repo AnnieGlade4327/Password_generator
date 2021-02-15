@@ -2,7 +2,7 @@
 
 - [Password Generator](#Password Generator)
 - [Demo-Preview](##Preview) 
-    * Format: ![Demo](https://drive.google.com/file/d/1N9KP5cHjLUYbihUC-kHX4JtpgdPm8hYE/view)
+    *[Demo](https://drive.google.com/file/d/1N9KP5cHjLUYbihUC-kHX4JtpgdPm8hYE/view);
 
   ![photo of application](password_gen.png)
 
