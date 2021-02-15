@@ -1,12 +1,13 @@
 
 - [Demo](#Preview) 
 - [Password-Generator](#Password-Generator)
+- [Diagram](#Diagram)
 
 ![photo of application](password_gen.png)
 
 # Preview
 * Video
-    - [Demo](https://drive.google.com/file/d/1N9KP5cHjLUYbihUC-kHX4JtpgdPm8hYE/view);
+    - [DemoVideo-Screencastify](https://drive.google.com/file/d/1N9KP5cHjLUYbihUC-kHX4JtpgdPm8hYE/view); ![demo of psw_generator]
 
     * Prompt()
     * Determine Length of Password
@@ -37,7 +38,8 @@ let result = [];
 --------------
 |card-body|cardfooter|
 ----------|-----------
-
+# Diagram
+<div class="mermaid">
 ```mermaid
 
 graph TD;
@@ -56,3 +58,4 @@ graph TD;
 * SubGraph1Flow -- YesForLowerCase --> ClickOkay
 end
 ````
+</div>
