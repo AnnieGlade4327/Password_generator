@@ -1,6 +1,6 @@
 
 - [Demo](#Preview) 
-- [Password-Generator](#Password Generator)
+- [Password-Generator](##Password-Generator)
 
 ![photo of application](password_gen.png)
 
@@ -14,10 +14,10 @@
         - [ ] You must enter a number.
         - [x] Password must not be more than 128 Characters.
     * Confirm List of Character Requirements
-        - [ ] You Must Select a Special Character
-        - [ ] You Must Selected an Upper Cased Letter
-        - [ ] You Must Selected a Lower Cased Letter
-# Password Generator
+        - [ ] You Must Select a Special Character [x]
+        - [ ] You Must Selected an Upper Cased Letter [x]
+        - [ ] You Must Selected a Lower Cased Letter [x]
+## Password Generator
  
    ```javascript
 function getRandom(arr) {
@@ -32,8 +32,11 @@ let result = [];
 
 ````
 |wrapper|card|
+--------|-----
 |Generate PWD|
+--------------
 |card-body|cardfooter|
+----------|-----------
 
 ```mermaid
 
