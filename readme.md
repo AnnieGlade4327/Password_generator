@@ -1,3 +1,17 @@
+# Password Generator 
+![photo of application](password_gen.png)
+
+- [Password Generator](#Password_Generator)
+- [Demo-Preview](#preview)
+
+# Preview
+
+```javascript
+function test() {
+ console.log("Enter Length of Password");
+}
+```
+
 ```mermaid          
 graph TD;
   
@@ -13,12 +27,14 @@ graph TD;
   Node1[Node 1] --> Node2[Node 2]
   Node2 --> SubGraph1[Jump to SubGraph1]
   SubGraph1 --> FinalThing[Final Thing]
-end
-```
+
 *SubGraph1Flow -- YesforSpecialChar --> ClickOkay
   SubGraph1Flow -- YesforUpperCase --> ClickOkay
   SubGraph1Flow -- YesForLowerCase --> ClickOkay
 * SubGraph1Flow -- HowManyChar --> EnterNumericChar
+end
+```
+
 
 <!-- ## GIVEN I need a new, secure password
 ## WHEN I click the button to generate a password
