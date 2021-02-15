@@ -1,12 +1,13 @@
 # Password Generator
 
-- [Password Generator](#Password Generator)
-- [Demo-Preview](##Preview) 
-    *[Demo](https://drive.google.com/file/d/1N9KP5cHjLUYbihUC-kHX4JtpgdPm8hYE/view);
+- [Demo](#Preview) 
+- [Password-Generator](#Password Generator)
 
-  ![photo of application](password_gen.png)
+![photo of application](password_gen.png)
 
-## Preview
+# Preview
+* Video
+    - [Demo](https://drive.google.com/file/d/1N9KP5cHjLUYbihUC-kHX4JtpgdPm8hYE/view);
 
     * Prompt()
     * Determine Length of Password
