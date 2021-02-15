@@ -15,9 +15,12 @@
         - [ ] You must enter a number.
         - [x] Password must not be more than 128 Characters.
     * Confirm List of Character Requirements
-        - [ ] You Must Select a Special Character [x]
-        - [ ] You Must Selected an Upper Cased Letter [x]
-        - [ ] You Must Selected a Lower Cased Letter [x]
+        - [ ] You Must Select a Special Character 
+        - [x] "Okay"
+        - [ ] You Must Selected an Upper Cased Letter 
+        - [x] "Okay
+        - [ ] You Must Selected a Lower Cased Letter
+        - [x] "Okay"
 # Password-Generator
  
    ```javascript
@@ -34,14 +37,14 @@ let result = [];
 ````
 |wrapper|card|
 --------|-----
-|GeneratePWD|
---------------
+GeneratePWD
 |card-body|cardfooter|
 ----------|-----------
 # Diagram
-<div class="mermaid">
+
 ```mermaid
 
+<div class="mermaid">
 graph TD;
   SubGraph1 --> SubGraph1Flow
   subgraph "You Must select >=8 and <=128"
