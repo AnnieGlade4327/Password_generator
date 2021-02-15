@@ -33,6 +33,18 @@ function generatePassword() {
 let options = getSelection();
 let result = [];
 }
+  // for loop to iterate password length
+
+  for (var i = 0; i < options.length; i++) {
+    var possibleChar = getRandom(possibleChar);
+
+    result.push(possibleChar);
+  }
+  for (var i = 0; i < setChar.length; i++) {
+    result[i] = setChar[i];
+  }
+  return result.join([i]);
+}
 
 ````
 |wrapper|card|
