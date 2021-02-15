@@ -7,7 +7,7 @@
 
 # Preview
 * Video
-    - [DemoVideo-Screencastify](https://drive.google.com/file/d/1N9KP5cHjLUYbihUC-kHX4JtpgdPm8hYE/view); ![demo of psw_generator]
+    - [DemoVideo-Screencastify](https://drive.google.com/file/d/1L1yUcwEPSP_LAG70lC-TC9vYMNvZiQys/view); ![demo of psw_generator]
 
     * Prompt()
     * Determine Length of Password
@@ -24,6 +24,8 @@
 # Password-Generator
  
    ```javascript
+
+//creating an array to set a random, generated psw
 function getRandom(arr) {
 let randomI = Math.floor(Math.random() \* arr.length);
 let randomE = arr[randomI];
