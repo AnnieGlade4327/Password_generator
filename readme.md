@@ -17,7 +17,7 @@
         - [ ] You Must Select a Special Character [x]
         - [ ] You Must Selected an Upper Cased Letter [x]
         - [ ] You Must Selected a Lower Cased Letter [x]
-## Password Generator
+## Password-Generator
  
    ```javascript
 function getRandom(arr) {
