@@ -1,17 +1,19 @@
 # Password Generator
 
 - [Password Generator](#Password Generator)
-- [Demo-Preview](##Preview)
+- [Demo-Preview](##Preview) 
+    * Format: ![Demo](https://drive.google.com/file/d/1N9KP5cHjLUYbihUC-kHX4JtpgdPm8hYE/view)
+
   ![photo of application](password_gen.png)
 
 ## Preview
 
-    *Prompt()
-    *Determine Length of Password
+    * Prompt()
+    * Determine Length of Password
         - [x] Password Must Be at Least 8 Characters
         - [ ] You must enter a number.
         - [x] Password must not be more than 128 Characters.
-    *Confirm List of Character Requirements
+    * Confirm List of Character Requirements
         - [ ] You Must Select a Special Character
         - [ ] You Must Selected an Upper Cased Letter
         - [ ] You Must Selected a Lower Cased Letter
@@ -34,24 +36,20 @@ let result = [];
 |card-body|cardfooter|
 
 ```mermaid
-graph TD;
 
+graph TD;
   SubGraph1 --> SubGraph1Flow
   subgraph "You Must select >=8 and <=128"
-  SubGraph1Flow(SubNode 1)
-
-
-
+  * SubGraph1Flow(SubNode 1)
   end
-
   subgraph "Generate A New Password"
   Node1[Node 1] --> Node2[Node 2]
+   * SubGraph1Flow -- HowManyChar --> EnterNumericChar[Must be >=8 and <=128]
   Node2 --> SubGraph1[MustSelectYes]
   SubGraph1 -->GeneratePossibleChar[GenerateRandomPassword]
 
-*SubGraph1Flow -- YesforSpecialChar --> ClickOkay
-  SubGraph1Flow -- YesforUpperCase --> ClickOkay
-  SubGraph1Flow -- YesForLowerCase --> ClickOkay
-* SubGraph1Flow -- HowManyChar --> EnterNumericChar
+* SubGraph1Flow -- YesforSpecialChar --> ClickOkay
+* SubGraph1Flow -- YesforUpperCase --> ClickOkay
+* SubGraph1Flow -- YesForLowerCase --> ClickOkay
 end
 ````
