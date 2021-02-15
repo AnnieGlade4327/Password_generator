@@ -17,9 +17,9 @@
     * Confirm List of Character Requirements
         - [ ] You Must Select a Special Character 
         - [x] "Okay"
-        - [ ] You Must Selected an Upper Cased Letter 
+        - [ ] You Must Select an Upper Cased Letter 
         - [x] "Okay
-        - [ ] You Must Selected a Lower Cased Letter
+        - [ ] You Must Select a Lower Cased Letter
         - [x] "Okay"
 # Password-Generator
  
