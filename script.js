@@ -124,7 +124,6 @@ function getSelection() {
 function getRandom(arr) {
   let randomI = Math.floor(Math.random() * arr.length); //ask about arr.length more
   let randomE = arr[randomI];
-  //and why did this only work when i placed it inside the function?
   return randomE;
 } // function to retrieve input and trigger random character selection
 function generatePassword() {
