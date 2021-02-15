@@ -90,7 +90,7 @@ function getSelection() {
     alert("Password must not be more than 128 characters");
     return;
   }
-  //(variable function?) targetting all elements, or are these objects, anywho, return that data.
+  // targetting all operations, returning that data.
   let hasSpecialChar = confirm(
     "Please click Yes to confirm including special characters."
   );
@@ -111,14 +111,14 @@ function getSelection() {
   ) {
     alert("Must choose at least one.");
     return;
-  } //ask about : vs =.  set password variable to equal input of each of these elements
+  }
   let passwords = {
     length: length,
     hasSpecialChar: hasSpecialChar,
     hasUpperCase: hasUpperCase,
     hasLowerCase: hasLowerCase,
     hasNumericChar: hasNumericChar,
-  }; //why does the return go outside of the function i get lost here took me forever to figure out
+  };
   return passwords;
 } //creating an array to set a random, generated psw
 function getRandom(arr) {
@@ -162,7 +162,7 @@ function generatePassword() {
     result[i] = setChar[i];
   }
   return result.join([i]);
-} 
+}
 
 var generateBtn = document.querySelector("#generate");
 
