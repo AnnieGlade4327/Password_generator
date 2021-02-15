@@ -2,6 +2,7 @@
 - [Demo](#Preview) 
 - [Password-Generator](#Password-Generator)
 - [Diagram](#Diagram)
+- [End](#End)
 
 
 ![photo of application](password_gen.png)
