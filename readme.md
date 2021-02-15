@@ -1,4 +1,3 @@
-# Password Generator
 
 - [Demo](#Preview) 
 - [Password-Generator](#Password Generator)
